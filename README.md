@@ -3,6 +3,8 @@
 
 If like me you're using a qwerty keyboard, but sometimes you have to use special characters like `é` `å` or exposants, you can be easily discourage to use vim as a note taking app; that's where vimvimvim comes to the rescue.
 
+![vimvimvim](https://i.imgur.com/G6Alq8f.png)
+
 ## Installation
 
 > TODO
