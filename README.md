@@ -25,4 +25,6 @@ In order to add your own character you can either make a pull request or edit th
 
 g:vimvimvim_dictionary.c = ['ç', 'c']
 
+imap ccc <esc>:call vimvimvim#open('c')<enter>
+
 ```
