@@ -1,7 +1,7 @@
-let g:items = { 'e': ['é', 'è', 'e'],
-              \ 'a': ['à', 'â', 'ä', 'a'],
-              \ '2': ['²', '2']
-              \ }
+let g:vimvimvim_dictionary = { 'e': ['é', 'è', 'e'],
+                             \ 'a': ['à', 'â', 'ä', 'a'],
+                             \ '2': ['²', '2']
+                             \ }
 
 function! vimvimvim#open(def) abort
   copen 5
@@ -9,13 +9,13 @@ function! vimvimvim#open(def) abort
   set relativenumber!
   set nonu
   set cursorline
-  let elements = deepcopy(g:items)
-  call vimvimvim#display(g:items[a:def])
+  let elements = deepcopy(g:vimvimvim_dictionary)
+  call vimvimvim#display(g:vimvimvim_dictionary[a:def])
   nnoremap <buffer> <silent> <enter> :call vimvimvim#validate()<enter>
   nnoremap <buffer> <silent> <esc> :q!<enter>
 
-  for section in keys(g:items)
-    execute 'nnoremap <buffer> ' . section . ' :call vimvimvim#display(g:items["' . section . '"])<enter>'
+  for section in keys(g:vimvimvim_dictionary)
+    execute 'nnoremap <buffer> ' . section . ' :call vimvimvim#display(g:vimvimvim_dictionary["' . section . '"])<enter>'
   endfor
 endfunction
 
